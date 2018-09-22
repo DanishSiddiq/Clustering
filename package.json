@@ -1,0 +1,41 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "CLustering POC",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w src --exec \" NODE_ENV=dev DEBUG=app node ./src/app.babel-register.js\"",
+    "prestart": "npm run -s build",
+    "lint": "eslint --fix src/*",
+    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -w src --exec \" NODE_ENV=dev DEBUG=app node ./src/app.babel-register.js\""
+  },
+  "author": "Danish",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "babel-register": "6.26.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-rate-limit": "3.1.1",
+    "morgan": "^1.9.1",
+    "pm2": "^3.1.2"
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "9.0.0",
+    "babel-jest": "23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "rimraf": "^2.6.2",
+    "eslint": "5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.2.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jest": "21.22.0",
+    "nodemon": "^1.18.4"
+  }
+}

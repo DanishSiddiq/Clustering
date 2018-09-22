@@ -1,0 +1,103 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest/globals": true,
+    "jest": true
+  },
+  "plugins": [
+    "jest"
+  ],
+  "rules": {
+    "no-unused-vars": 1,
+    "no-shadow": 0,
+    "consistent-return": 0,
+    "no-loop-func": 0,
+    "global-require": 0,
+    "import/no-dynamic-require": 0,
+    "no-useless-escape": 0,
+    "guard-for-in": 0,
+    "radix": 0,
+    "new-cap": 0,
+    "no-prototype-builtins": 0,
+    "max-len": [
+      2,
+      {
+        "code": 280,
+        "tabWidth": 4,
+        "ignoreUrls": true
+      }
+    ],
+    "babel/object-curly-spacing": 0,
+    "no-console": 0,
+    "no-param-reassign": [
+      0,
+      {
+        "props": false
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": false,
+        "array": false
+      }
+    ],
+    "no-plusplus": 0,
+    "import/prefer-default-export": "off",
+    "no-await-in-loop": 0,
+    "no-underscore-dangle": [
+      1,
+      {
+        "allow": [
+          "_attretext",
+          "_attrecode",
+          "_value",
+          "_text",
+          "_id",
+          "_db"
+        ]
+      }
+    ],
+    "no-continue": 0,
+    "no-use-before-define": [
+      "error",
+      {
+        "variables": false
+      }
+    ],
+    "no-multi-spaces": [
+      2,
+      {
+        "exceptions": {
+          "VariableDeclarator": true
+        }
+      }
+    ],
+    "import/no-extraneous-dependencies": "off",
+    "import/no-cycle": "off",
+    "no-return-assign": "off",
+    "indent": "off",
+    "prefer-template": "off",
+    "no-restricted-syntax": "off",
+    "arrow-body-style": "off",
+    "padded-blocks": "off",
+    "object-curly-newline": "off",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "import/named": "off"
+  },
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:jest/recommended"
+  ]
+}
