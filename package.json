@@ -37,5 +37,8 @@
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jest": "21.22.0",
     "nodemon": "^1.18.4"
+  }, 
+  "resolutions": {
+    "**/event-stream": "^4.0.1"
   }
 }
